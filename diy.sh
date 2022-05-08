@@ -13,5 +13,5 @@ echo 'src-git echo kenzo https://github.com/kenzok8/openwrt-packages' >> feeds.c
 echo 'src-git small https://github.com/kenzok8/small' >> feeds.conf.default
 
 # add luci -app-
-git clone https://github.com/MeIsReallyBa/k2p-openwrt-mt7615_5.0.2.0.git package/k2p-openwrt-mt7615_5.0.2.0
-git clone https://github.com/hanwckf/openwrt-mt7615.git package/openwrt-mt7615
+#git clone https://github.com/MeIsReallyBa/k2p-openwrt-mt7615_5.0.2.0.git package/k2p-openwrt-mt7615_5.0.2.0
+#git clone https://github.com/hanwckf/openwrt-mt7615.git package/openwrt-mt7615
