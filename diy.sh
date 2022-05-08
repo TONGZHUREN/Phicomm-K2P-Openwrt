@@ -11,3 +11,7 @@ sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generat
 # Add a feed source
 echo 'src-git echo kenzo https://github.com/kenzok8/openwrt-packages' >> feeds.conf.default
 echo 'src-git small https://github.com/kenzok8/small' >> feeds.conf.default
+
+# add luci -app-
+git clone https://github.com/MeIsReallyBa/k2p-openwrt-mt7615_5.0.2.0.git package/k2p-openwrt-mt7615_5.0.2.0
+git clone https://github.com/hanwckf/openwrt-mt7615.git package/openwrt-mt7615
