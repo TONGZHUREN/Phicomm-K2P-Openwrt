@@ -3,7 +3,7 @@
 # Lisence: MIT
 # Author: tjuyy
 #=================================================
-name: Build Lean's OpenWrt for K2P
+name: OpenWrt for K2P
 
 on:
   release:
@@ -102,7 +102,7 @@ jobs:
         uses: actions/upload-artifact@main
         if: always()
         with:
-          name: OpenWrt_K2P_bin-${{ env.Date_and_RunNumber }}
+          name: K2P_bin-${{ env.Date_and_RunNumber }}
           path: openwrt/bin
 
       - name: Remove packages
