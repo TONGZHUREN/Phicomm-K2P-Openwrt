@@ -59,6 +59,9 @@ jobs:
 #         cd openwrt
 #          sed -i '/helloworld/s/^#//g' feeds.conf.default
 
+      - name: Update & install feeds
+        run: cd openwrt && ./scripts/feeds update -a && ./scripts/feeds install -a
+
       - name: Load custom configuration
         env:
           CONFIG_FILE: "k2p.config"
@@ -74,8 +77,6 @@ jobs:
           ../$DIY_SH
           make defconfig
 
-      - name: Update & install feeds
-        run: cd openwrt && ./scripts/feeds update -a && ./scripts/feeds install -a
     
     # - name: SSH connection to Actions
       #   uses: P3TERX/debugger-action@master
