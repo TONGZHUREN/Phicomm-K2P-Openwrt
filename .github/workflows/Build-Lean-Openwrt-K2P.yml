@@ -11,8 +11,8 @@ on:
   push:
     branches:
       - master
-    paths:
-      - "k2p.config"
+#    paths:
+ #     - "k2p.config"
 #  schedule:
  #   - cron: 0 0 * * 1
   #watch:
