@@ -6,8 +6,8 @@
 name: Build Lean's OpenWrt for K2P
 
 on:
-  release:
-   types: [published]
+ # release:
+  # types: [published]
   #push:
    # branches:
     #  - master
