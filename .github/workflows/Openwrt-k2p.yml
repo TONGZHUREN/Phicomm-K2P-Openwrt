@@ -61,7 +61,7 @@ jobs:
 
       - name: Load custom configuration
         env:
-          CONFIG_FILE: "k2p.config"
+#          CONFIG_FILE: "k2p.config"
           DIY_SH: "diy.sh"
         run: |
           [ -e files ] && mv files openwrt/files
@@ -77,6 +77,10 @@ jobs:
       - name: Update & install feeds
         run: cd openwrt && ./scripts/feeds update -a && ./scripts/feeds install -a
     
+      - name: Download all
+        env:
+           CONFIG_FILE: "k2p.config"
+#          DIY_SH: "diy.sh"
     # - name: SSH connection to Actions
       #   uses: P3TERX/debugger-action@master
 
