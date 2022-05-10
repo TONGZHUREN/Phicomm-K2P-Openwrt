@@ -82,12 +82,12 @@ jobs:
     #   git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
     #    git clone "your_github_link" package/"your_folder_name"      
 
-    - name: Import external feeds - OpenAppFilter
+    - name: update & install - OpenAppFilter
       working-directory: ./openwrt
       run: |
         git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
 
-    - name: Configuration Customization - phicomm_k2p
+    - name: make config
       env:
         CONFIG_FILE: 'k2p.config'
       run: |
