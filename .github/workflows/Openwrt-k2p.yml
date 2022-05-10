@@ -8,12 +8,12 @@
 name: phicomm_k2p
 
 on: 
- release:
+  release:
     types: [published]
 
-    push:
-    branches: 
-      - master
+  #push:
+  #  branches: 
+  #    - master
 
   #schedule:
   #  - cron: 0 8 * * 5
